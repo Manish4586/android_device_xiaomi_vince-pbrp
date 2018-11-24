@@ -77,6 +77,15 @@ TARGET_HW_DISK_ENCRYPTION := true
 # Treble
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
+BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
+
+# A/B partition device flags
+#TARGET_NO_KERNEL := false
+#TARGET_NO_RECOVERY := true
+#BOARD_USES_RECOVERY_AS_BOOT := true
+AB_OTA_UPDATER := true
 
 # Official
 PB_OFFICIAL := true
